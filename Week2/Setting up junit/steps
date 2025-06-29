@@ -1,0 +1,4 @@
+In Eclipse IDE:
+Right-click on your project →
+
+Click: Build Path → Add Libraries → JUnit → Next → Finish
