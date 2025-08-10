@@ -1,0 +1,19 @@
+mkdir Git-T03-HOL_001
+cd Git-T03-HOL_001
+git init
+echo "Hello from master" > file.txt
+git add file.txt
+git commit -m "Initial commit on master"
+echo "Hello from master - updated by User1" > file.txt
+git add file.txt
+git commit -m "User1 updates master"
+git checkout -b feature-branch HEAD~1
+echo "Hello from master - updated by User2 on feature branch" > file.txt
+git add file.txt
+git commit -m "User2 updates file on feature branch"
+git checkout master
+git merge feature-branch
+
+
+git add file.txt
+git commit -m "Resolved merge conflict between master and feature-branch"

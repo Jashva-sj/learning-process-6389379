@@ -1,0 +1,20 @@
+git config --global core.editor "notepad++.exe"
+cd path/to/your/local/repo
+notepad++ .gitignore
+# Ignore all .log files
+*.log
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore IDE config folders
+.vscode/
+.idea/
+git add .gitignore
+git commit -m "Added .gitignore to ignore unwanted files"
+git push origin master
+git status

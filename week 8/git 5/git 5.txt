@@ -1,0 +1,4 @@
+git merge feature-branch
+Hello from master - updated by User1 and User2
+git add file.txt
+git commit -m "Resolved merge conflict between master and feature-branch"
